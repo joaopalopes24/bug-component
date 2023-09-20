@@ -6,10 +6,8 @@ use Closure;
 use Illuminate\Contracts\View\View;
 use Illuminate\View\Component;
 
-class ComponentA extends Component
+class Test extends Component
 {
-    public bool $test = true;
-
     /**
      * Create a new component instance.
      */
@@ -23,6 +21,6 @@ class ComponentA extends Component
      */
     public function render(): View|Closure|string
     {
-        return view('components.component-a');
+        return view('components.test');
     }
 }

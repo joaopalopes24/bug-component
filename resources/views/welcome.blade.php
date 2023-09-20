@@ -11,6 +11,15 @@
         <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" />
     </head>
     <body class="antialiased">
-        <x-component-a />
+        @php
+            $bool = true;
+        @endphp
+        <x-test x-data="test({
+            @if ($bool)
+                test: 'test'
+            @endif
+        })">
+            Content
+        </x-test>
     </body>
 </html>
